@@ -1,50 +1,50 @@
 [
   {
     "id": 1,
-    "image": "/images/Cat1.jpg"
+    "image": "/images/cat1.jpg"
   },
   {
     "id": 2,
-    "image": "/images/Cat2.jpg"
+    "image": "/images/cat2.jpg"
   },
   {
     "id": 3,
-    "image": "/images/Cat3.jpg"
+    "image": "/images/cat3.jpg"
   },
   {
     "id": 4,
-    "image": "/images/Cat4.jpg"
+    "image": "/images/cat4.jpg"
   },
   {
     "id": 5,
-    "image": "/images/Cat5.jpg"
+    "image": "/images/cat5.jpg"
   },
   {
     "id": 6,
-    "image": "/images/Cat6.jpg"
+    "image": "/images/cat6.jpg"
   },
   {
     "id": 7,
-    "image": "/images/Cat7.jpg"
+    "image": "/images/cat7.jpg"
   },
   {
     "id": 8,
-    "image": "/images/Cat8.jpg"
+    "image": "/images/cat8.jpg"
   },
   {
     "id": 9,
-    "image": "/images/Cat9.jpg"
+    "image": "/images/cat9.jpg"
   },
   {
     "id": 10,
-    "image": "/images/Cat10.jpg"
+    "image": "/images/cat10.jpg"
   },
   {
     "id": 11,
-    "image": "/images/Cat11.jpg"
+    "image": "/images/cat11.jpg"
   },
   {
     "id": 12,
-    "image": "/images/Cat12.jpg"
+    "image": "/images/cat12.jpg"
   }
 ]

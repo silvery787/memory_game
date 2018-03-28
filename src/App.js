@@ -85,7 +85,7 @@ class App extends Component {
             clickCat={this.clickCat}
             id={cat.id}
             key={cat.id}
-            image={process.env.PUBLIC_URL+cat.image}
+            image={window.location.origin+cat.image}
           />
         ))}
       </Wrapper>
