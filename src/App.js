@@ -85,7 +85,7 @@ class App extends Component {
             clickCat={this.clickCat}
             id={cat.id}
             key={cat.id}
-            image={window.location.origin+cat.image}
+            image={require('../public'+cat.image)}
           />
         ))}
       </Wrapper>
