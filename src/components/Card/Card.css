@@ -1,0 +1,21 @@
+.cat-card {
+  background: #fff;
+  border-radius: 5px;
+  height: 225px;
+  margin: 2rem;
+  position: relative;
+  width: 225px;
+  box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+  text-align: left;
+}
+.cat-card img {
+  width: 94%;
+  margin: 3%;
+}
+
+.cat-card:hover {
+  height: 250px;
+  width: 250px;
+  margin: 0.7rem;
+  box-shadow: 0 8px 6px #999, 0 8px 6px #999;
+}
