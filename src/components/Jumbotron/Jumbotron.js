@@ -1,7 +1,7 @@
 import React from "react";
 import "./Jumbotron.css";
 
-const sakura = require('./sakura.png');
+import sakura from './sakura.png';
 
 const divStyle = {
   backgroundImage: 'url(' + sakura + ')'
