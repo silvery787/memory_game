@@ -1,18 +1,18 @@
 import React, { Component } from "react";
-import Wrapper from "./components/Wrapper";
-import Title from "./components/Title";
+import Score from "./components/Score";
 import Card from "./components/Card";
+import CardBox from "./components/CardBox";
+import Footer from "./components/Footer";
 import cat_list from "./cats.json";
 import "./App.css";
 
 class App extends Component {
-  // Setting this.state.friends to the friends json array
   state = {
     cats: cat_list,
+    score: 0,
     wins: 0,
-    total_wins: 0,
-    total_loses: 0,
-    message : "Click a Cat to begin!"
+    loses: 0,
+    message : ""
   };
 
   componentDidMount = () => {
@@ -28,7 +28,7 @@ class App extends Component {
     });
 
     this.setState({ cats: cats });
-    this.setState({ wins: 0 });
+    this.setState({ score: 0 });
     this.shuffleCats();
   };
 
@@ -50,22 +50,22 @@ class App extends Component {
     for(let i=0; i<n; i++){
       if( cats[i].id === id ){
         if( cats[i].clicked ){
-          this.setState({ wins: 0 });
-          this.setState({ message: "You loose!!!" });
-          this.setState({ total_loses: this.state.total_loses + 1 });
+          this.setState({ score: 0 });
+          this.setState({ message: "You Loose!" });
+          this.setState({ loses: this.state.loses + 1 });
           this.startGame();
         }
         else{
-          let wins = this.state.wins;
-          wins++;
-          if( wins === 12 ) {
-            this.setState({ message : "You win!!!" });
-            this.setState({ total_wins: this.state.total_wins + 1 });
+          let score = this.state.score;
+          score++;
+          if( score === 12 ) {
+            this.setState({ message : "You Win!" });
+            this.setState({ wins: this.state.wins + 1 });
             this.startGame();
           }
           else{
             this.setState({ message : "Correct!" });
-            this.setState({ wins: wins });
+            this.setState({ score: score });
             cats[i].clicked++;
             this.setState({ cats: cats});
             this.shuffleCats();
@@ -78,17 +78,25 @@ class App extends Component {
 
   render() {
     return (
-      <Wrapper>
-        <Title>{this.state.message} | Cats: {this.state.wins} | Total Wins: {this.state.total_wins} | Total total_loses:{this.state.total_loses} </Title>
-        {this.state.cats.map(cat => (
-          <Card
-            clickCat={this.clickCat}
-            id={cat.id}
-            key={cat.id}
-            image={require('../public'+cat.image)}
-          />
-        ))}
-      </Wrapper>
+      <div>
+        <Score
+          msg={this.state.message}
+          score={this.state.score}
+          wins={this.state.wins}
+          loses={this.state.loses} 
+        />
+        <CardBox>
+          {this.state.cats.map(cat => (
+            <Card
+              clickCat={this.clickCat}
+              id={cat.id}
+              key={cat.id}
+              image={require('../public'+cat.image)}
+            />
+          ))}
+        </CardBox>
+        <Footer />
+      </div>
     );
   }
 }

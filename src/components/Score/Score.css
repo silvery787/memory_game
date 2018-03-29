@@ -1,0 +1,24 @@
+.score-panel {
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  background-color: #b3ddfd;
+  color: #2A77AE;
+  height: 100px;
+  padding-top: 20px;
+  box-shadow: 0 8px 10px #999, 2px 8px 10px #999;
+  margin-bottom: 150px;
+  position: fixed;
+  z-index: 99;
+}
+.title {
+	font-size: 4rem;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+.message-red {
+	color: red;
+}
+.message-green {
+	color: green;
+}

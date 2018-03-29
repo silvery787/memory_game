@@ -1,14 +1,14 @@
-.wrapper {
+.card-box {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
 
-  padding-top: 50px;
+  padding: 20px;
+  padding-top: 150px;
   background: #ECEFF1;
   height: 100%;
   display: flex;
   flex-flow: row wrap;
-  padding: 20px;
   justify-content: space-around;
   align-content: flex-start;
   overflow: auto;
