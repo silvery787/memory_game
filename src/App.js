@@ -3,6 +3,7 @@ import Score from "./components/Score";
 import Card from "./components/Card";
 import CardBox from "./components/CardBox";
 import Footer from "./components/Footer";
+import Jumbotron from "./components/Jumbotron";
 import cat_list from "./cats.json";
 import "./App.css";
 
@@ -85,6 +86,7 @@ class App extends Component {
           wins={this.state.wins}
           loses={this.state.loses} 
         />
+        <Jumbotron />
         <CardBox>
           {this.state.cats.map(cat => (
             <Card

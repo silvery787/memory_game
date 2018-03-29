@@ -2,9 +2,9 @@
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-
+  margin-top: 0px;
   padding: 20px;
-  padding-top: 150px;
+  /*padding-top: 150px;*/
   background: #ECEFF1;
   height: 100%;
   display: flex;
