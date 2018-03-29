@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.bbc9ce25.css",
-  "main.css.map": "static/css/main.bbc9ce25.css.map",
-  "main.js": "static/js/main.8887d9f7.js",
-  "main.js.map": "static/js/main.8887d9f7.js.map",
+  "main.css": "static/css/main.2c386f7c.css",
+  "main.css.map": "static/css/main.2c386f7c.css.map",
+  "main.js": "static/js/main.61615654.js",
+  "main.js.map": "static/js/main.61615654.js.map",
   "static/media/cat1.jpg": "static/media/cat1.9f7993f1.jpg",
   "static/media/cat10.jpg": "static/media/cat10.4a9cb2b5.jpg",
   "static/media/cat11.jpg": "static/media/cat11.7d86c51e.jpg",
@@ -15,5 +15,6 @@
   "static/media/cat7.jpg": "static/media/cat7.f9878d63.jpg",
   "static/media/cat8.jpg": "static/media/cat8.6b9a27bd.jpg",
   "static/media/cat9.jpg": "static/media/cat9.7d4dd0e6.jpg",
-  "static/media/favicon.ico": "static/media/favicon.c92b85a5.ico"
+  "static/media/favicon.ico": "static/media/favicon.c92b85a5.ico",
+  "static/media/sakura.png": "static/media/sakura.d9489726.png"
 }
